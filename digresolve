@@ -1,0 +1,3 @@
+#!/bin/bash
+
+for host in $(cat $1); do dig @$2 $host >> $3 ; done
